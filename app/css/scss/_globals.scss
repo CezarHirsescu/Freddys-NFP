@@ -1,0 +1,86 @@
+// useful default styles
+html {
+    // lets the user control the zoom level in their browser
+    font-size: 100%;
+    // this line includes the border, margin, and padding in the height and width measurment
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    // every element will inherit the box-sizing: border-box attribute
+    box-sizing: inherit;
+}
+
+// more default styles
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+    font-family: 'Public Sans', sans-serif; 
+    font-size: $font-med;
+    color: $grayishBlue;
+
+    // noscroll class is used when the mobile menu is active to prevent user from scrolling
+    &.noscroll {
+        overflow: hidden;
+    }
+}
+
+// Link
+a, a:visited, a:hover {
+    text-decoration: none;
+
+}
+
+// Spacing
+.container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+// Flexbox
+.flex {
+    display: flex;
+    // this line in scss creates another class in regular css called ".flex-jc-sb"
+    // instead of rewriting that class we can simply nest it in ".flex"
+    // that new class will inherit all the attributes of .flex without copying code
+    &-jc-sb {   
+        justify-content: space-between;
+    }
+    &-jc-c {
+        justify-content: center;
+    }
+    &-ai-c {
+        align-items: center;
+    }
+}
+
+// default button
+button, .button {
+    padding: 0.875rem 2.1875rem;
+    color: white;
+    background: $greenCyanGradient;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: opacity 300ms ease-in-out;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+// Visibility
+// hide for tablet and mobile
+// uses the visibility mixins
+.hide-for-desktop {
+    @include breakpoint-up(large) {
+        display: none;
+    }
+}
+.hide-for-mobile {
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}

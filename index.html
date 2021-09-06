@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<!-- Icon (TODO: Add company icon) -->
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<!-- font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- css -->
+		<link rel="stylesheet" href="/app/css/style.css" />
+
+		<title>Company Name</title>
+	</head>
+	<body>
+		<!-- !!!!!!!!!!!!!!!!!!! Header !!!!!!!!!!!!!!!!!!! -->
+		<header class="header">
+			<!-- Overlay for when mobile menu is active -->
+			<div class="overlay has-fade"></div>
+
+			<!-- Nav element contains links and button -->
+			<nav class="container flex flex-jc-sb flex-ai-c">
+				<a href="/" class="header__logo">
+					<img src="images/logo.svg" alt="Easybank" />
+				</a>
+
+				<!-- hamburger icon for mobile menu access -->
+				<a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+
+        <!-- Desktop veiw header links -->
+				<div class="header__links hide-for-mobile">
+					<a href="#">Home</a>
+					<a href="#">About</a>
+					<a href="#">Contact</a>
+					<a href="#">Blog</a>
+					<a href="#">Careers</a>
+				</div>
+
+        <!-- Not sure what this button will do yet -->
+				<button class="button hide-for-mobile" type="button">
+					Donate Here
+				</button>
+			</nav>
+
+      <!-- Mobile menu -->
+			<div class="header__menu has-fade">
+				<a href="#">Home</a>
+				<a href="#">About</a>
+				<a href="#">Contact</a>
+				<a href="#">Blog</a>
+				<a href="#">Careers</a>
+			</div>
+		</header>
+
+
+    
+		<script src="/app/js/header.js"></script>
+	</body>
+</html>

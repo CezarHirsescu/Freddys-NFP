@@ -1,0 +1,8 @@
+// vars mixins and animations
+@import "scss/variables";
+@import "scss/mixins";
+@import "scss/animations";
+
+// the scss is split up into sections of the html page
+@import "scss/globals";
+@import "scss/header";
