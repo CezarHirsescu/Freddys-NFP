@@ -1,2 +1,0 @@
-# Freddys-NFP
-name pending
