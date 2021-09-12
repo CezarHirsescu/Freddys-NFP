@@ -28,3 +28,19 @@ btnHamburger.addEventListener("click", () => {
 		})
 	}
 })
+
+// fixed a bug where if the mobile menu was open and a user resized the window to larger than the
+// mobile menu, then the mobile menu would not dissapear
+// now the mobile menu will dissapear if the screen is resized passed mobile view.
+let width = window.innerWidth
+window.onresize = function () {
+	width = this.innerWidth
+	if (width > 1023) {
+        // close hamburger menu
+		body.classList.remove("noscroll")
+		header.classList.remove("open")
+		fadeElems.forEach((element) => {
+			element.classList.remove("fade-in")
+		})
+    }
+}
