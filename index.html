@@ -1,77 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- displays site properly based on user's device -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-		<!-- Icon (TODO: Add company icon) -->
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./images/favicon-32x32.png"
-		/>
+  <!-- Icon (TODO: Add company icon) -->
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./images/favicon-32x32.png"
+  />
 
-		<!-- font -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
-			rel="stylesheet"
-		/>
-		<!-- css -->
-		<link rel="stylesheet" href="/app/css/style.css" />
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- css -->
+  <link rel="stylesheet" href="./app/css/style.css" />
 
-		<title>Company Name</title>
-	</head>
-	<body>
-		<!-- !!!!!!!!!!!!!!!!!!! Header !!!!!!!!!!!!!!!!!!! -->
-		<header class="header">
-			<!-- Overlay for when mobile menu is active -->
-			<div class="overlay has-fade"></div>
+  <title>Company Name</title>
+</head>
+<body>
+  <!-- !!!!!!!!!!!!!!!!!!! Header !!!!!!!!!!!!!!!!!!! -->
+  <header class="header">
+    <!-- Overlay for when mobile menu is active -->
+    <div class="overlay has-fade"></div>
 
-			<!-- Nav element contains links and button -->
-			<nav class="container flex flex-jc-sb flex-ai-c">
-				<a href="/" class="header__logo">
-					<img src="images/logo.svg" alt="Easybank" />
-				</a>
+    <!-- Nav element contains links and button -->
+    <nav class="container flex flex-jc-sb flex-ai-c">
+      <a href="/" class="header__logo">
+        <img src="./images/logo.svg" alt="Easybank" />
+      </a>
 
-				<!-- hamburger icon for mobile menu access -->
-				<a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
-					<span></span>
-					<span></span>
-					<span></span>
-				</a>
+      <!-- hamburger icon for mobile menu access -->
+      <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
 
-				<!-- Desktop veiw header links -->
-				<div class="header__links hide-for-mobile">
-					<a href="#">Home</a>
-					<a href="#">About</a>
-					<a href="#">Contact</a>
-					<a href="#">Blog</a>
-					<a href="#">Careers</a>
-				</div>
+      <!-- Desktop veiw header links -->
+      <div class="header__links hide-for-mobile">
+        <a href="/">Home</a>
+        <a href="/app/html/about.html">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+      </div>
 
-				<!-- Not sure what this button will do yet -->
-				<button class="button hide-for-mobile" type="button">
-					Donate Here
-				</button>
-			</nav>
+      <!-- Not sure what this button will do yet -->
+      <button class="button hide-for-mobile" type="button">
+        Support Us
+      </button>
+    </nav>
 
-			<!-- Mobile menu -->
-			<div class="header__menu has-fade">
-				<a href="#">Home</a>
-				<a href="#">About</a>
-				<a href="#">Contact</a>
-				<a href="#">Blog</a>
-				<a href="#">Careers</a>
-			</div>
-		</header>
+    <!-- Mobile menu -->
+    <div class="header__menu has-fade">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Blog</a>
+      <a href="#">Careers</a>
+    </div>
+  </header>
+
+  <main>
+    <article class="title">
+      <h1>Insert Title</h1>
+      <p>Give a little explination about what this company is about: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quia officia reprehenderit corrupti unde sunt sapiente iste ipsum repellat tenetur voluptatem incidunt, vero vel molestias, iusto nesciunt earum nemo itaque!</p>
+      <button class="button" type="button">Support Us</button>
+    </article>
+
+    <article class="article1">
+      <h2>Section Title</h2>
+      <p>A little bit about what this section is about: Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eveniet eum quas odit quibusdam cum ad praesentium nulla? Explicabo corporis animi sequi amet quaerat corrupti modi culpa laborum rem nostrum!</p>
+      <div class="article1__grid">
+        <div class="article1__item">
+          <img src="./images/icon-online.svg" alt="an icon">
+          <h4>Research Point?</h4>
+          <p>The icons are replacable but I was thinking we could have something like this. Think it looks nice</p>
+        </div>
+        <div class="article1__item"">
+          <img src="./images/icon-budgeting.svg" alt="an icon">
+          <h4>Research Point?</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, harum. Fugiat perspiciatis sequi, quasi libero aspernatur ipsa ad sint, incidunt, soluta earum aperiam. Ab maiores, nam est non illo dicta!</p>
+        </div>
+        <div class="article1__item"">
+          <img src="./images/icon-onboarding.svg" alt="an icon">
+          <h4>Research Point?</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, harum. Fugiat perspiciatis sequi, quasi libero aspernatur ipsa ad sint, incidunt, soluta earum aperiam. Ab maiores, nam est non illo dicta!</p>
+        </div>
+        <div class="article1__item"">
+          <img src="./images/icon-api.svg" alt="an icon">
+          <h4>Research Point?</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, harum. Fugiat perspiciatis sequi, quasi libero aspernatur ipsa ad sint, incidunt, soluta earum aperiam. Ab maiores, nam est non illo dicta!</p>
+        </div>
+      </div>
+    </article>
+  </main>
 
 
-		
-		<script src="/app/js/header.js"></script>
-	</body>
+
+  
+  <script src="./app/js/header.js"></script>
+</body>
 </html>
