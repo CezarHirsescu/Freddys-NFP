@@ -86,3 +86,9 @@ button, .button {
         display: none;
     }
 }
+
+// center content on large screens
+.ccls {
+    max-width: 90rem;
+    margin: 0 auto;
+}

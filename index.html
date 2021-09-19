@@ -29,43 +29,45 @@
 <body>
   <!-- !!!!!!!!!!!!!!!!!!! Header !!!!!!!!!!!!!!!!!!! -->
   <header class="header">
-    <!-- Overlay for when mobile menu is active -->
-    <div class="overlay has-fade"></div>
+    <div class="ccls">
+      <!-- Overlay for when mobile menu is active -->
+      <div class="overlay has-fade"></div>
 
-    <!-- Nav element contains links and button -->
-    <nav class="container flex flex-jc-sb flex-ai-c">
-      <a href="/" class="header__logo">
-        <img src="./images/logo.svg" alt="Easybank" />
-      </a>
+      <!-- Nav element contains links and button -->
+      <nav class="container flex flex-jc-sb flex-ai-c">
+        <a href="/" class="header__logo">
+          <img src="./images/logo.svg" alt="Easybank" />
+        </a>
 
-      <!-- hamburger icon for mobile menu access -->
-      <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
+        <!-- hamburger icon for mobile menu access -->
+        <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
 
-      <!-- Desktop veiw header links -->
-      <div class="header__links hide-for-mobile">
-        <a href="/">Home</a>
-        <a href="/">Donate</a>
-        <a href="/app/html/about.html">About</a>
-        <a href="/app/html/our-team.html">Our Team</a>
+        <!-- Desktop veiw header links -->
+        <div class="header__links hide-for-mobile">
+          <a href="/">Home</a>
+          <a href="/">Donate</a>
+          <a href="/app/html/about.html">About</a>
+          <a href="/app/html/our-team.html">Our Team</a>
+        </div>
+
+        <!-- Not sure what this button will do yet -->
+        <button class="button hide-for-mobile" type="button">
+          Support Us
+        </button>
+      </nav>
+
+      <!-- Mobile menu -->
+      <div class="header__menu has-fade">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
       </div>
-
-      <!-- Not sure what this button will do yet -->
-      <button class="button hide-for-mobile" type="button">
-        Support Us
-      </button>
-    </nav>
-
-    <!-- Mobile menu -->
-    <div class="header__menu has-fade">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-      <a href="#">Blog</a>
-      <a href="#">Careers</a>
     </div>
   </header>
 
@@ -74,58 +76,64 @@
 
     <!-- Title Content: the first thing the user sees when they open the page -->
     <article class="title">
-      <h1>Insert Title</h1>
-      <p>Give a little explination about what this company is about: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quia officia reprehenderit corrupti unde sunt sapiente iste ipsum repellat tenetur voluptatem incidunt, vero vel molestias, iusto nesciunt earum nemo itaque!</p>
-      <button class="button" type="button">Support Us</button>
+      <div class="ccls"> 
+        <h1>Insert Title</h1>
+        <p>Give a little explination about what this company is about: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quia officia reprehenderit corrupti unde sunt sapiente iste ipsum repellat tenetur voluptatem incidunt, vero vel molestias, iusto nesciunt earum nemo itaque!</p>
+        <button class="button" type="button">Support Us</button>
+      </div>
     </article>
 
     <!-- Some info -->
     <article class="article1">
-      <h2>Section Title</h2>
-      <p>A little bit about what this section is about: Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eveniet eum quas odit quibusdam cum ad praesentium nulla? Explicabo corporis animi sequi amet quaerat corrupti modi culpa laborum rem nostrum!</p>
-      <div class="article1__grid">
-        <div class="article1__item">
-          <img src="./images/icon-online.svg" alt="an icon">
-          <h4>Research Point?</h4>
-          <p>The icons are replacable but I was thinking we could have something like this. Think it looks nice</p>
-        </div>
-        <div class="article1__item"">
-          <img src="./images/icon-budgeting.svg" alt="an icon">
-          <h4>Research Point?</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, harum. Fugiat perspiciatis sequi, quasi libero aspernatur ipsa ad sint, incidunt, soluta earum aperiam. Ab maiores, nam est non illo dicta!</p>
-        </div>
-        <div class="article1__item"">
-          <img src="./images/icon-onboarding.svg" alt="an icon">
-          <h4>Research Point?</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, harum. Fugiat perspiciatis sequi, quasi libero aspernatur ipsa ad sint, incidunt, soluta earum aperiam. Ab maiores, nam est non illo dicta!</p>
-        </div>
-        <div class="article1__item"">
-          <img src="./images/icon-api.svg" alt="an icon">
-          <h4>Research Point?</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, harum. Fugiat perspiciatis sequi, quasi libero aspernatur ipsa ad sint, incidunt, soluta earum aperiam. Ab maiores, nam est non illo dicta!</p>
+      <div class="ccls">
+        <h2>Section Title</h2>
+        <p>A little bit about what this section is about: Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eveniet eum quas odit quibusdam cum ad praesentium nulla? Explicabo corporis animi sequi amet quaerat corrupti modi culpa laborum rem nostrum!</p>
+        <div class="article1__grid">
+          <div class="article1__item">
+            <img src="./images/icon-online.svg" alt="an icon">
+            <h4>Research Point?</h4>
+            <p>The icons are replacable but I was thinking we could have something like this. Think it looks nice</p>
+          </div>
+          <div class="article1__item"">
+            <img src="./images/icon-budgeting.svg" alt="an icon">
+            <h4>Research Point?</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, harum. Fugiat perspiciatis sequi, quasi libero aspernatur ipsa ad sint, incidunt, soluta earum aperiam. Ab maiores, nam est non illo dicta!</p>
+          </div>
+          <div class="article1__item"">
+            <img src="./images/icon-onboarding.svg" alt="an icon">
+            <h4>Research Point?</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, harum. Fugiat perspiciatis sequi, quasi libero aspernatur ipsa ad sint, incidunt, soluta earum aperiam. Ab maiores, nam est non illo dicta!</p>
+          </div>
+          <div class="article1__item"">
+            <img src="./images/icon-api.svg" alt="an icon">
+            <h4>Research Point?</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, harum. Fugiat perspiciatis sequi, quasi libero aspernatur ipsa ad sint, incidunt, soluta earum aperiam. Ab maiores, nam est non illo dicta!</p>
+          </div>
         </div>
       </div>
     </article>
 
     <!-- Some more info -->
     <article class="article2">
-      <h2>Section Title</h2>
-      <div class="article2__grid">
-        <div class="article2__item">
-          <h4>Research Points that are larger than the section above</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi commodi expedita ipsum reiciendis voluptas officiis iusto aut eaque repudiandae quo dicta earum, obcaecati porro soluta quam? Atque ad sequi fugiat.</p>
-        </div>
-        <div class="article2__item">
-          <h4>Research Points that are larger than the section above</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi commodi expedita ipsum reiciendis voluptas officiis iusto aut eaque repudiandae quo dicta earum, obcaecati porro soluta quam? Atque ad sequi fugiat.</p>
-        </div>
-        <div class="article2__item">
-          <h4>Research Points that are larger than the section above</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi commodi expedita ipsum reiciendis voluptas officiis iusto aut eaque repudiandae quo dicta earum, obcaecati porro soluta quam? Atque ad sequi fugiat.</p>
-        </div>
-        <div class="article2__item">
-          <h4>Research Points that are larger than the section above</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi commodi expedita ipsum reiciendis voluptas officiis iusto aut eaque repudiandae quo dicta earum, obcaecati porro soluta quam? Atque ad sequi fugiat.</p>
+      <div class="ccls">
+        <h2>Section Title</h2>
+        <div class="article2__grid">
+          <div class="article2__item">
+            <h4>Research Points that are larger than the section above</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi commodi expedita ipsum reiciendis voluptas officiis iusto aut eaque repudiandae quo dicta earum, obcaecati porro soluta quam? Atque ad sequi fugiat.</p>
+          </div>
+          <div class="article2__item">
+            <h4>Research Points that are larger than the section above</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi commodi expedita ipsum reiciendis voluptas officiis iusto aut eaque repudiandae quo dicta earum, obcaecati porro soluta quam? Atque ad sequi fugiat.</p>
+          </div>
+          <div class="article2__item">
+            <h4>Research Points that are larger than the section above</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi commodi expedita ipsum reiciendis voluptas officiis iusto aut eaque repudiandae quo dicta earum, obcaecati porro soluta quam? Atque ad sequi fugiat.</p>
+          </div>
+          <div class="article2__item">
+            <h4>Research Points that are larger than the section above</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi commodi expedita ipsum reiciendis voluptas officiis iusto aut eaque repudiandae quo dicta earum, obcaecati porro soluta quam? Atque ad sequi fugiat.</p>
+          </div>
         </div>
       </div>
     </article>
@@ -133,35 +141,35 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer__grid">
+    <div class="ccls">
+      <div class="footer__grid">
 
-      <div class="footer__item">
-        <a class="footer__logo" href="#"><img src="./images/logo-dark.svg" /></a>
+        <div class="footer__item">
+          <a class="footer__logo" href="#"><img src="./images/logo-dark.svg" /></a>
 
-        <div class="footer__social">
-          <a href="#"><img src="./images/icon-facebook.svg" alt="Facebook"/></a>
-          <a href="#"><img src="./images/icon-twitter.svg" alt="Twitter"/></a>
-          <a href="#"><img src="./images/icon-instagram.svg" alt="Instagram"/></a>
-          <a href="#"><img src="./images/icon-youtube.svg" alt="Youtube"/></a>
+          <div class="footer__social">
+            <a href="#"><img src="./images/icon-facebook.svg" alt="Facebook"/></a>
+            <a href="#"><img src="./images/icon-twitter.svg" alt="Twitter"/></a>
+            <a href="#"><img src="./images/icon-instagram.svg" alt="Instagram"/></a>
+            <a href="#"><img src="./images/icon-youtube.svg" alt="Youtube"/></a>
+          </div>
+        </div>
+        <div class="footer__item">
+          <div class="footer__links">
+            <a href="/">Home</a>
+            <a href="/">Donate</a>
+            <a href="/app/html/about.html">About</a>
+            <a href="/app/html/our-team.html">Our Team</a>
+          </div>
+        </div>
+        <div class="footer__item">
+          <button class="button" type="button">
+            Support Us
+          </button>
+          <p>&copy; Company Name, All Rights Reserved</p>
         </div>
       </div>
-      <div class="footer__item">
-        <div class="footer__links">
-          <a href="/">Home</a>
-          <a href="/">Donate</a>
-          <a href="/app/html/about.html">About</a>
-          <a href="/app/html/our-team.html">Our Team</a>
-        </div>
-      </div>
-      <div class="footer__item">
-        <button class="button" type="button">
-          Support Us
-        </button>
-        <p>&copy; Company Name, All Rights Reserved</p>
-      </div>
-
     </div>
-    
   </footer>
 
   <script src="./app/js/header.js"></script>

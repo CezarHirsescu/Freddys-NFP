@@ -168,6 +168,11 @@ button:hover, .button:hover {
   }
 }
 
+.ccls {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
 .header.open .header__toggle > span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
