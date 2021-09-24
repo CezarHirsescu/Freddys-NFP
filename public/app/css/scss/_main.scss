@@ -1,0 +1,32 @@
+main {
+    p {
+        font-size: $font-sm;
+        padding-bottom: 30px;
+        color: $grayishBlue;
+        line-height: 1.7;
+    }
+
+    h1 {
+        font-weight: 100;
+        font-size: 48px;
+        color: $darkBlue;
+    }
+
+    h2 {
+        font-weight: 100;
+        font-size: 36px;
+        color: $darkBlue;
+    }
+
+    h3 {
+        font-weight: 100;
+        font-size: 24px;
+        color: $darkBlue;
+    }
+
+    h4 {
+        font-weight: 100;
+        font-size: 18px;
+        color: $darkBlue;
+    }
+}

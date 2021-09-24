@@ -1,0 +1,31 @@
+.article1 {
+    background-color: $lightGrayishBlue;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    &__grid {
+        // display flex for medium screens and up
+        @include breakpoint-up(medium) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @include breakpoint-down(small) {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    &__item {
+        padding: 0.9375rem;
+
+        @include breakpoint-up(medium) {
+            flex: 0 0 50%;
+        }
+
+        @include breakpoint-up(large) {
+            flex: 1;
+        }
+    }
+}
