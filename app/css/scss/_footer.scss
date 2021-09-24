@@ -37,9 +37,16 @@
 	}
 
 	&__social {
-		margin-top: 1.875rem;
+		margin-top: 0.5rem;
 		a {
 			padding: 0px 12px 0px 12px;
 		}
 	}
+
+    h1 {
+        margin: 0px;
+        font-weight: 700;
+        font-size: 36px;
+        color: $white;
+    }
 }

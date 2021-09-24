@@ -205,6 +205,13 @@ button:hover, .button:hover {
   padding-bottom: 1.0625rem;
 }
 
+.header h1 {
+  margin: 0px;
+  font-weight: 700;
+  font-size: 48px;
+  color: #2d314d;
+}
+
 .header__logo img {
   width: 8.8125rem;
   height: 1.375rem;
@@ -450,10 +457,17 @@ main h4 {
 }
 
 .footer__social {
-  margin-top: 1.875rem;
+  margin-top: 0.5rem;
 }
 
 .footer__social a {
   padding: 0px 12px 0px 12px;
+}
+
+.footer h1 {
+  margin: 0px;
+  font-weight: 700;
+  font-size: 36px;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
